@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestPlayerPrefs : MonoBehaviour// 変数の値をアプリケーションが終了しても残るようにするクラス
+/// <summary>
+/// 変数の値をアプリケーションが終了しても残るようにするクラス
+/// 参考: https://qiita.com/situtyo666/items/e1a3bf15a2dccc2bfedc
+/// </summary>
+public class TestPlayerPrefs : MonoBehaviour
 {
     #region fields
     //private string highScore = "PLYAERLEVEL";
@@ -14,12 +18,6 @@ public class TestPlayerPrefs : MonoBehaviour// 変数の値をアプリケーシ
         //データ名「CLEARSTAGE」に引数の0を代入        
         PlayerPrefs.SetInt("PLYAERLEVEL", 0);
         Debug.Log(LevelUp());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public static int LevelUp()
