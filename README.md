@@ -1,5 +1,4 @@
 # UnityTest  
-## Unityのテスト用プロジェクトです  
 
 ## Unityのversion  
 2018.3.0f2  
